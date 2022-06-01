@@ -17,7 +17,7 @@ public class HomePage extends BasePage {
     }
 
     public Element eleHamburgerMenu() {
-        return new Element(getElement("xpath","//*[@id='nav-hamburger-menu']"),"hamburger name","home page");
+        return new Element(getElement("xpath","//*[@id='nav-hamburger-menu']"),"hamburger menu","home page");
     }
 
     public void navigateToTelevision(){

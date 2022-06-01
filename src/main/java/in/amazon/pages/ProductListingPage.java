@@ -1,6 +1,7 @@
 package in.amazon.pages;
 
 import core.framework.base.BasePage;
+import core.framework.base.DriverContext;
 import core.framework.controls.elements.Element;
 
 public class ProductListingPage extends BasePage {
@@ -13,7 +14,7 @@ public class ProductListingPage extends BasePage {
     }
 
     public Element eleSecondProduct() {
-        return new Element(getElement("xpath","//*[@data-component-type='s-search-result'][2]"),"Second product from search listing","product listing page");
+        return new Element(getElement("xpath","//*[@data-component-type='s-search-result'][2]//a"),"Second product from search listing","product listing page");
     }
     public void sortByPriceHighToLow(){
         eleSortBy().click();
